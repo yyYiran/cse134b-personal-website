@@ -152,12 +152,10 @@ body {
 }
 
 /* contact me */
-#contact-form {
-  display: flex;
-}
 
 #a-message > textarea {
   resize: none;
+  width: 500px;
 }
 
 @media screen and (max-width: 500px) {
