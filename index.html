@@ -10,36 +10,42 @@
     <meta name="author" content="Yiran Wan" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yiran Wan</title>
-    <style>
-      body {
-        padding: 10px;
-      }
-    </style>
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
   </head>
 
   <body>
     <header>
       <h1>Yiran Wan</h1>
-      <nav>
+
+      <nav id="navigation">
         <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
         <a href="#experiment">Experiment</a>
       </nav>
-      <hr />
+      <div id="socialmedia">
+        <a href="https://github.com/yyYiran" target="_blank"
+          ><img class="icon" src="./github-icon.png" alt="github"
+        /></a>
+        <a href="https://www.linkedin.com/in/yiran-w-90b51b1b9/" target="_blank"
+          ><img class="icon" src="./linkedin-icon.png" alt="linkedin"
+        /></a>
+      </div>
     </header>
+    <div id="test"></div>
 
     <main>
       <!-- About -->
-      <section id="about">
+      <section id="about" class="main-sec">
         <h2>About</h2>
+        <p>Yiran Wan</p>
+        <p>UCSD 2024, Math-CS, Mobile/Web development & Design</p>
         <p>
-          Hello, my name is Yiran Wan. I'm currently a third-year studying
-          Math-CS in UCSD with experience in web/mobile app development and UI
-          design. I'm looking for a 2023 Summer SWE Internship to gain more
-          hands-on experience in the industry.
+          Hello, my name is Yiran Wan. I'm currently a junior majoring in
+          Math-CS at UCSD. I'm interested in software design and development,
+          and have worked on native & cross-platform mobile apps.
         </p>
         <section id="education">
           <h3>Education</h3>
@@ -78,50 +84,119 @@
       </section>
 
       <!-- Portfolio -->
-      <section id="portfolio">
+      <section id="portfolio" class="main-sec">
         <h2>Portfolio</h2>
-        <section id="mobile-app"></section>
-        <section id="web-app"></section>
-        <section id="design"></section>
+        <section id="project-container">
+          <!-- LB617 -->
+          <div class="project">
+            <img src="./lb617.jpg" alt="sd-zoo-seeker" />
+            <h4>Live Boston 617</h4>
+            <p class="project-description">
+              A news app that documents reportings on crime incidents and first
+              responders to raise safety awareness in Boston
+            </p>
+          </div>
+          <!-- sd-zoo-seeker -->
+          <div class="project">
+            <img src="./sd-zoo-seeker-tri.jpg" alt="sd-zoo-seeker" />
+            <h4>San Diego Zoo Explorer</h4>
+            <p class="project-description">
+              A trip-planner that allows users to select and navigate exhibits
+              in shortest distances in San Diego Zoo
+            </p>
+          </div>
+
+          <!-- Moodguru -->
+          <div class="project">
+            <img src="./moodguru.jpg" alt="moodguru" />
+            <h4>MoodGuru</h4>
+            <p class="project-description">
+              A mood-tracking app that analyzes user's current mood based on
+              their journals via NLP, provides customized feedback, and records
+              mood pattern over time
+            </p>
+          </div>
+          <!-- drop your list -->
+          <div class="project">
+            <img src="./dropyourlist.gif" alt="dropyourlist" />
+            <h4>Booklist sharing</h4>
+            <p class="project-description">
+              A web app for creating and sharing reading list
+            </p>
+          </div>
+          <!-- Light and sound memory game -->
+          <div class="project">
+            <img src="./lightsound.jpg" alt="light-sound-memory-game" />
+            <h4>Memory game</h4>
+            <p class="project-description">
+              A game that requires players to repeat a randomly generated light
+              and sound pattern
+            </p>
+          </div>
+        </section>
       </section>
 
       <!-- Skills -->
-      <section id="skills">
+      <section id="skills" class="main-sec">
         <h2>Skills</h2>
-        <section></section>
+        <table>
+          <caption>
+            Skills table
+          </caption>
+          <thead>
+            <tr>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </section>
 
       <!-- Contact -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <p></p>
-        <form action="/html/tags/html_form_tag_action.cfm" method="post">
-          <label for="name">Name: </label>
-          <input type="text" name="name" id="name" required /><br />
-          <label for="email">Email: </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            placeholder="xyz@gmail.com"
-          /><br />
-          <label for="message">Message: </label><br />
-          <textarea
-            type="text"
-            name="message"
-            id="message"
-            placeholder="Any feedback, comments"
-            rows="10"
-            required
-          ></textarea
-          ><br />
-          <button type="submit">Submit</button>
+      <section id="contact" class="main-sec">
+        <h2>Contact Me</h2>
+
+        <p id="myemail">
+          Email: <a href="mailto:y3wan@ucsd.edu">y3wan@ucsd.edu</a>
+        </p>
+        <form method="post">
+          <div id="contact-form">
+            <div>
+              <div id="a-name">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required />
+              </div>
+
+              <div id="a-email">
+                <label for="email">Email: </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="xyz@gmail.com"
+                />
+              </div>
+            </div>
+
+            <div id="a-message">
+              <label for="message">Message: </label><br />
+              <textarea
+                type="text"
+                name="message"
+                id="message"
+                placeholder="Any feedback, comments"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <button type="submit">Send</button>
         </form>
       </section>
 
       <!-- Experiment -->
-      <section id="experiment">
+      <section id="experiment" class="main-sec">
         <h2>Experiment</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. In eligendi
