@@ -25,21 +25,22 @@
         <a href="#contact">Contact</a>
         <a href="#experiment">Experiment</a>
       </nav>
-      <div id="socialmedia">
-        <a href="https://github.com/yyYiran" target="_blank"
-          ><img class="icon" src="./github-icon.png" alt="github"
-        /></a>
-        <a href="https://www.linkedin.com/in/yiran-w-90b51b1b9/" target="_blank"
-          ><img class="icon" src="./linkedin-icon.png" alt="linkedin"
-        /></a>
-      </div>
     </header>
-    <div id="test"></div>
 
     <main>
       <!-- About -->
       <section id="about" class="main-sec">
         <h2>About</h2>
+        <div id="socialmedia">
+          <a href="https://github.com/yyYiran" target="_blank"
+            ><img class="icon" src="./images/github-icon.svg" alt="github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/yiran-w-90b51b1b9/"
+            target="_blank"
+            ><img class="icon" src="./images/linkedin-icon.png" alt="linkedin"
+          /></a>
+        </div>
         <p>Yiran Wan</p>
         <p>UCSD 2024, Math-CS, Mobile/Web development & Design</p>
         <p>
@@ -88,69 +89,81 @@
         <h2>Portfolio</h2>
         <section id="project-container">
           <!-- LB617 -->
-          <div class="project">
-            <img src="./lb617.jpg" alt="sd-zoo-seeker" />
+          <section class="project">
+            <img src="./images/lb617.jpg" alt="sd-zoo-seeker" />
             <h4>Live Boston 617</h4>
             <p class="project-description">
               A news app that documents reportings on crime incidents and first
               responders to raise safety awareness in Boston
             </p>
-          </div>
+          </section>
           <!-- sd-zoo-seeker -->
-          <div class="project">
-            <img src="./sd-zoo-seeker-tri.jpg" alt="sd-zoo-seeker" />
+          <section class="project">
+            <img src="./images/sd-zoo-seeker-tri.jpg" alt="sd-zoo-seeker" />
             <h4>San Diego Zoo Explorer</h4>
             <p class="project-description">
               A trip-planner that allows users to select and navigate exhibits
               in shortest distances in San Diego Zoo
             </p>
-          </div>
+          </section>
 
           <!-- Moodguru -->
-          <div class="project">
-            <img src="./moodguru.jpg" alt="moodguru" />
+          <section class="project">
+            <img src="./images/moodguru.jpg" alt="moodguru" />
             <h4>MoodGuru</h4>
             <p class="project-description">
               A mood-tracking app that analyzes user's current mood based on
               their journals via NLP, provides customized feedback, and records
               mood pattern over time
             </p>
-          </div>
+          </section>
           <!-- drop your list -->
-          <div class="project">
-            <img src="./dropyourlist.gif" alt="dropyourlist" />
+          <section class="project">
+            <img src="./images/dropyourlist.gif" alt="dropyourlist" />
             <h4>Booklist sharing</h4>
             <p class="project-description">
               A web app for creating and sharing reading list
             </p>
-          </div>
+          </section>
           <!-- Light and sound memory game -->
-          <div class="project">
-            <img src="./lightsound.jpg" alt="light-sound-memory-game" />
+          <section class="project">
+            <img src="./images/lightsound.jpg" alt="light-sound-memory-game" />
             <h4>Memory game</h4>
             <p class="project-description">
               A game that requires players to repeat a randomly generated light
               and sound pattern
             </p>
-          </div>
+          </section>
         </section>
       </section>
 
       <!-- Skills -->
       <section id="skills" class="main-sec">
-        <h2>Skills</h2>
-        <p>
-          Technologies: Java, Kotlin, React Native, Python, JavaScript,
-          HTML/CSS, Typescript, Spring Boot, Angular
-        </p>
-        <p>
-          Tools: GIT, GitHub, Android Studio (JUnit, Espresso, Robolectric),
-          MySQL, Figma
-        </p>
-        <p>
-          Techniques: Agile software process, Behavior-Driven Development,
-          Testing, Debugging, Design patterns
-        </p>
+        <h2>Technical Competencies</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td><span class="category">Languages</span></td>
+              <td>
+                Java, Kotlin, JavaScript, HTML, CSS, SQL, Python, Typescript
+              </td>
+            </tr>
+            <tr>
+              <td><span class="category">Tools & Technologies</span></td>
+              <td>
+                Android Studio (JUnit, Espresso, Robolectric), React Native,
+                React, Spring Boot, Angular, Figma
+              </td>
+            </tr>
+            <tr>
+              <td><span class="category">Methodologies</span></td>
+              <td>
+                Agile, Test/Behavior-Driven Development, Design patterns,
+                Debugging, Testing
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <!-- Contact -->
@@ -181,7 +194,7 @@
             </div>
 
             <div id="a-message">
-              <label for="message">Message: </label><br />
+              <label for="message">Message: </label>
               <textarea
                 type="text"
                 name="message"
@@ -190,9 +203,9 @@
                 rows="10"
                 required
               ></textarea>
+              <button type="submit">Send</button>
             </div>
           </div>
-          <button type="submit">Send</button>
         </form>
       </section>
 
@@ -204,7 +217,7 @@
 
     <footer>
       <hr />
-      <p>This is a class project of UCSD CSE134B.</p>
+      <p>This is a class project of UCSD CSE134B, Winter 2023.</p>
     </footer>
   </body>
 </html>
